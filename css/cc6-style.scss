@@ -1,0 +1,97 @@
+@import "_0-normalize";
+
+$jhs-gold: gold;
+$jhs-green: green;
+
+
+$brown1: #eee7df;
+$brown2: #ddd1c1;
+$brown3: #cdbba3;
+$brown4: #cdbba3;
+
+body {
+	background-color: white;
+	padding: 1em;
+
+	// typography
+	max-width: 700px;
+	margin: 0 auto;
+	position: relative;
+
+	//
+	font-family: serif;
+}
+
+////////////////////////////////////
+// TYPOGRAPHY
+////////////////////////////////////
+h1, h2 {
+	color: $brown4;
+	font-family: serif;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 1em;
+}
+
+h3, h4 {
+	font-size: 1em;
+	color: $jhs-green;
+	em { float: right; }
+}
+
+
+ul {
+	margin-left:0;
+	// padding-left:1em;
+	padding-left: 0;
+	list-style: none;
+
+	li:before {
+		/* Unicode bullet symbol */
+    content: '\2022 ';
+    /* Bullet color */
+    color: $brown4;
+    padding-right: 0.5em;
+	}
+}
+
+
+
+
+
+////////////////////////////////////
+// DOTS
+////////////////////////////////////
+
+// border-bottom-style: 
+$dot-size: 1em;
+$dot-radius: 0.25rem;
+
+.dot-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.dot {
+	width: $dot-size;
+	height: $dot-size;
+	border-radius: $dot-radius;
+	background-color: gold;
+	display: inline-block;	
+	// border: 2px solid $brown1;
+	
+	&:nth-child(1) { 
+		background-color: #eee; 
+		border: 2px solid $brown1;
+	}
+	&:nth-child(2) { background-color: $brown1; }
+	&:nth-child(3) { background-color: $brown2; }
+	&:nth-child(4) { background-color: $brown3; }
+	&:nth-child(5) { background-color: $brown4; }
+
+}
