@@ -1,0 +1,69 @@
+////////////////////////////////////
+// TYPOGRAPHY
+////////////////////////////////////
+
+$font-stack : 'Merriweather', serif;
+
+body {
+	font-family: $font-stack;
+}
+
+h1, h2 {
+	color: $brown5;	
+}
+
+h1 {
+	font-size: 1.5em; // 24px	
+}
+
+h2 {
+	font-size: 1.125em; // 18px
+	margin-top: 1.5em;
+}
+
+h3 {
+	
+	font-size: 1em;
+	color: $jhs-green;
+	margin: 1.2em 0 0.5em;
+	font-weight: 300;
+	
+	em { 
+		// float: right; 
+		font-weight: 700;
+	}
+}
+
+// regular lists
+ul {
+	margin-left:0;
+	margin-top: 0;
+	
+	padding-left: 0;
+	list-style: none;
+
+	li:before {
+		/* Unicode bullet symbol */
+    content: '\2022 ';
+    /* Bullet color */
+    color: $brown4;
+    padding-right: 0.5em;
+	}
+
+	li {
+		line-height: 1.6;
+	}
+}
+
+// first list with contact info
+ul:first-of-type {
+	border: 1px solid pink;
+	li {
+		display: inline-block;
+		margin-right: 0.5em;
+		font-size: .8125em;
+		color: $jhs-green;
+		&::before { color: $jhs-green; }
+		// &:first-child::before { display: none;  }
+	}
+}

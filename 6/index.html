@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic,900,900italic,300,300italic' rel='stylesheet' type='text/css'>
 		<link type="text/css" rel="stylesheet" href="/css/cc6-style.css"/>
 		<title>CC6 | Resume</title>
 	</head>
 	<body>
 		
-		<h1>Lucas Rothenberger</h1>
+		<h1>Lucas Rothenberger</h1> 
 		<ul>
 			<li>11581 SW Sheffield Circle</li>
 			<li>Tigard, OR 97223</li>
@@ -15,7 +16,7 @@
 		</ul>
 
 		<!-- dots -->
-		<div class="dot-wrapper">
+		<div class="dot-wrapper hide ">
 			<div class="dot"></div>
 			<div class="dot"></div>
 			<div class="dot"></div>
@@ -76,5 +77,62 @@
 		<ul>
 			<li>Available upon request</li>
 		</ul>
+
+
+
+<script>
+
+// function createDot() {
+	var dotMarkup = "<div class='dot'></div>";
+	
+// 	var numberOfDots = 5;
+	
+// 	for (var i = 0; i > numberOfDots; i++){
+// 		insertDots(dotMarkup);
+// 	}
+// }
+
+
+
+function insert(el, markup) {
+	var position = 'afterend'; // 'beforebegin', 'afterbegin', 'beforeend'
+	el.insertAdjacentHTML(position, markup)
+}
+
+function insertDots() {
+	
+	// insert the wrapper
+	var element = document.getElementsByTagName('h1');
+	var wrapperMarkup = "<div class='dot-wrapper'></div>";
+	var position = 'afterend'; // 'beforebegin', 'afterbegin', 'beforeend'
+	
+	element[0].insertAdjacentHTML(position, wrapperMarkup);
+
+	var numberOfDots = 5;
+	var dotWrapper = document.getElementsByClassName('dot-wrapper')
+	
+	console.log(dotWrapper);
+	console.log(dotWrapper[0]);
+	for ( var i = 0; i < numberOfDots; i++) {
+		console.log('new dot');
+	// 	insert(dotWrapper, dotMarkup);
+		dotWrapper[0].insertAdjacentHTML('afterbegin', dotMarkup);
+
+	};
+	console.log('end');
+
+
+
+}
+
+// createDot();
+insertDots();
+// insertDots(dotMarkup);
+// insertDots(dotMarkup);
+// insertDots(dotMarkup);
+// insertDots(dotMarkup);
+	
+
+</script>
 	</body>
 </html>

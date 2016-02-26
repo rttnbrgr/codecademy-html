@@ -1,0 +1,57 @@
+////////////////////////////////////
+// DOTS
+////////////////////////////////////
+
+$dot-size: 1em;
+$dot-radius: 0.25rem;
+
+$brown: dodgerblue;
+$brown1: #eee7df;
+$brown2: #eee7df;
+$brown3: #ddd1c1;
+$brown4: #CDBBA3;
+$brown5: #AD8F67;
+
+.dot-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-top: 5px;
+}
+
+.dot {
+	display: inline-block;
+	width: $dot-size;
+	height: $dot-size;
+	// add w/ insertion via js
+	margin-left: 0.3em;	
+	border-radius: $dot-radius;
+
+	// first child
+	background-color: transparent;
+	border: 2px solid $brown1;
+	// other children
+	&:nth-child(2) { 
+		background-color: $brown2; 
+		border-color: $brown2; 
+	}
+	&:nth-child(3) { 
+		background-color: $brown3; 
+		border-color: $brown3;
+	}
+	&:nth-child(4) { 
+		background-color: $brown4;
+		border-color: $brown4;
+	}
+	&:nth-child(5) { 
+		background-color: $brown5;
+		border-color: $brown5;
+	}
+	// wanna write this loop but 
+	// @for $i from 2 through 5 {
+	// 	&:nth-child( #{$i} ) {
+	// 		background-color: $brown+#{$i};
+	// 		border-color: $brown5;
+	// 	}
+	// }
+}
