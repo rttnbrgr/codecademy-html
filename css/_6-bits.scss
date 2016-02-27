@@ -19,17 +19,11 @@ $dot-size: 1em;
 $dot-radius: 0.25rem;
 
 $bp-small: 500px;
+$body-padding: 1.3em;
 
 
 // helpers
 .hide { display: none; }
-
-
-
-// @mixin bp(size){
-
-// }
-
 
 
 ////////////////////////////////////
@@ -47,7 +41,7 @@ html {
 
 body {
 	
-	padding: 0 1.3em;
+	padding: 0 $body-padding 2em;
 	margin: 0 auto;
 	position: relative;
 	max-width: 700px;

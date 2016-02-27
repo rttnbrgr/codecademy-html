@@ -9,34 +9,10 @@
 // DOTS
 @import '6-dots';
 
-// h3 {
-// 	// font-size: 1.25em;
-// 	margin: 1em 0 .3em;
-// 	margin: 0.5em 0 .3em;
-// }
-// h3 em {
-// 	display: block;
-// 	float: none;
-// 	line-height: 1.7;
-// 	font-size: 0.7em;
-// }
-
-// ul {
-// 	margin-bottom: 0.4em;
-// 	line-height: 1.4;
-// }
-
-
-// ul:first-of-type {
-// 	// border: none;
-// 	margin-bottom: 0;
-// }
-
-
 @media screen and (min-width: $bp-small) {
 	
 	body {
-		padding: 0 0 2em;
+		// padding: 0 0 2em;
 	}
 
 	h1 {
@@ -46,17 +22,21 @@
 
 	h3 em {
 		float: right;
+		font-size: .8em;
+	}
+
+	ul {
+		margin-bottom: 1em; 
+
+		&:first-of-type li:first-child::before { display: none; }
 	}
 
 	.dot-wrapper {
 		position: absolute;
+		top: 0;
+		right: 0;
+		padding-top: .3125em;
 	}
 	
-	ul {
-		margin-bottom: 1em; 
-	}
-	ul:first-of-type li {
-		&:first-child::before { display: none; }
-	}
 
 }

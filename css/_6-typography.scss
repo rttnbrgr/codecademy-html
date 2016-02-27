@@ -76,7 +76,7 @@ ul {
 ul:first-of-type {
 	// border: 1px solid pink;
 	margin-bottom: 0;
-	
+
 	li {
 		display: inline-block;
 		margin-right: 0.5em;
@@ -86,3 +86,5 @@ ul:first-of-type {
 		// &:first-child::before { display: none;  }
 	}
 }
+
+

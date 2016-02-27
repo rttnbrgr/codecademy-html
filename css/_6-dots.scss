@@ -9,7 +9,7 @@
 	@media screen and (min-width: $bp-small) {
 		position: absolute;
 		top: 0;
-		right: 0;
+		right: $body-padding;
 		padding-top: .3125em;
 	}
 
@@ -45,6 +45,7 @@
 		background-color: $brown5;
 		border-color: $brown5;
 	}
+	
 	// wanna write this loop but 
 	// @for $i from 2 through 5 {
 	// 	&:nth-child( #{$i} ) {
