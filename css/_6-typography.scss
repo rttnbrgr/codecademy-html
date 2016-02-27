@@ -3,17 +3,22 @@
 ////////////////////////////////////
 
 $font-stack : 'Merriweather', serif;
+$font-stack: 'Crimson Text', monospace, serif;
 
 body {
+	font-family: serif;
 	font-family: $font-stack;
+
 }
 
 h1, h2 {
 	color: $brown5;	
+
 }
 
 h1 {
 	font-size: 1.5em; // 24px	
+	margin-bottom: 0;
 }
 
 h2 {

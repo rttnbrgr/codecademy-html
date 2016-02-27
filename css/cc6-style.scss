@@ -21,30 +21,51 @@ h1 {
 	margin-bottom: 0;
 }
 
+h2 {
+	margin-bottom: 0.6em;
+}
+
 h3 {
 	font-size: 1.25em;
+	margin: 1em 0 .3em;
+	margin: 0.5em 0 .3em;
 }
 h3 em {
 	display: block;
 	float: none;
-	line-height: 1.4;
+	line-height: 1.7;
 	font-size: 0.7em;
 }
+
+
+
+
+
+
 
 .dot-wrapper {
 	margin-bottom: 1em;
 	position: relative;	
+	.dot:first-child { margin-left: 0; }
 }
+
+
+ul {
+	margin-bottom: 0.4em;
+	line-height: 1.4;
+}
+
 
 ul:first-of-type {
 	border: none;
+	margin-bottom: 0;
 }
 
 
 @media screen and (min-width: $bp-small) {
 	
 	h1 {
-		margin-bottom: 1em;
+		margin-bottom: 0.3em;
 	}
 
 	h3 em {

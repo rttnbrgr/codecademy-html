@@ -2,21 +2,17 @@
 // DOTS
 ////////////////////////////////////
 
-$dot-size: 1em;
-$dot-radius: 0.25rem;
-
-$brown: dodgerblue;
-$brown1: #eee7df;
-$brown2: #eee7df;
-$brown3: #ddd1c1;
-$brown4: #CDBBA3;
-$brown5: #AD8F67;
-
 .dot-wrapper {
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding-top: 5px;
+	position: relative;	
+	margin-bottom: 0.5em;
+	
+	@media screen and (min-width: $bp-small) {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding-top: .3125em;
+	}
+
 }
 
 .dot {
@@ -30,6 +26,8 @@ $brown5: #AD8F67;
 	// first child
 	background-color: transparent;
 	border: 2px solid $brown1;
+	&:first-child { margin-left: 0; }
+
 	// other children
 	&:nth-child(2) { 
 		background-color: $brown2; 
@@ -55,3 +53,4 @@ $brown5: #AD8F67;
 	// 	}
 	// }
 }
+
