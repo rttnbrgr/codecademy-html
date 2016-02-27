@@ -1,10 +1,8 @@
-# test
-- 11581 SW Sheffield Circle
-- Tigard, OR 97223
+# Lucas Rothenberger XXX
+- 11581 SW Sheffield Circle Tigard, OR 97223
 - Phone: 503 544-4424
 - E-Mail: lrothenberger10@gmail.com
 
-<!-- dots -->
 ## Experience
 
 ### Jesuit High School *January 2013-Present*

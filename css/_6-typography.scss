@@ -8,12 +8,13 @@ $font-stack: 'Crimson Text', monospace, serif;
 body {
 	font-family: serif;
 	font-family: $font-stack;
-
+	font-weight: 400;
 }
 
-h1, h2 {
-	color: $brown5;	
 
+h1, h2 { 
+	color: $brown5;
+	font-weight: 700;
 }
 
 h1 {
@@ -28,21 +29,16 @@ h2 {
 	margin-bottom: 0;
 }
 
-h3 {
-	
-	// font-size: 1em;
-	font-size: 1.25em;	
-	color: $jhs-green;
-	// margin: 1.2em 0 0.5em;
+h3 {	
 	margin: 0.8em 0 .3em;	
-	font-weight: 300;
+	font-size: 1.25em;	
+	font-weight: 400;
+	color: $jhs-green;
 	
 	em { 
-		// float: right; 
 		display: block;
-		// float: none;
-		line-height: 1.7;
 		font-size: 0.7em;
+		line-height: 1.7;
 		font-weight: 700;
 	}
 }
@@ -56,35 +52,38 @@ ul {
 
 
 	padding-left: 0;
-	list-style: none;
-
-	li:before {
-		/* Unicode bullet symbol */
-    content: '\2022 ';
-    /* Bullet color */
-    color: $brown4;
-    padding-right: 0.5em;
-	}
+	list-style: none;	
 
 	li {
 		line-height: 1.6;
+		
+		// color dots
+		&:before {
+			/* Unicode bullet symbol */
+	    content: '\2022 ';
+	    /* Bullet color */
+	    color: $brown4;
+	    padding-right: 0.5em;
+		}
 
 	}
-}
 
-// first list with contact info
-ul:first-of-type {
-	// border: 1px solid pink;
-	margin-bottom: 0;
+	// first list with contact info
+	&:first-of-type {
+		margin-bottom: 0;
 
-	li {
-		display: inline-block;
-		margin-right: 0.5em;
-		font-size: .8125em;
-		color: $jhs-green;
-		&::before { color: $jhs-green; }
-		// &:first-child::before { display: none;  }
+		li {
+			display: inline-block;
+			margin-right: 0.5em;
+			font-size: .8125em;
+			font-style: italic;
+			color: $jhs-green;
+
+			&::before { color: $jhs-green; }			
+		}
 	}
+	
 }
+
 
 

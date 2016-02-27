@@ -1,80 +1,85 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link type="text/css" rel="stylesheet" href="css/cc6-style.css"/>
-		<title>CC6 | Resume</title>
-	</head>
-	<body>
-		
-		<h1>Lucas Rothenberger</h1>
-		<ul>
-			<li>11581 SW Sheffield Circle</li>
-			<li>Tigard, OR 97223</li>
-			<li>Phone: 503 544-4424</li>
-			<li>E-Mail: lrothenberger10@gmail.com</li>
-		</ul>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>0</title>
+    <meta content="width=devide-width, initial-scale=1" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css">
+    <link href="/css/cc6-style.css" rel="stylesheet">
+  </head>
+  <body><h1 id="lucas-rothenberger-xxx">Lucas Rothenberger XXX</h1>
+<ul>
+<li>11581 SW Sheffield Circle Tigard, OR 97223</li>
+<li>Phone: 503 544-4424</li>
+<li>E-Mail: lrothenberger10@gmail.com</li>
+</ul>
+<h2 id="experience">Experience</h2>
+<h3 id="jesuit-high-school-january-2013-present-">Jesuit High School <em>January 2013-Present</em></h3>
+<ul>
+<li>Work as an Assistant Track &amp; Cross Country Coach and Summer Camp Counselor.</li>
+<li>Led weekly classroom sessions on goal setting, race strategy and self-evaluation.</li>
+<li>Directed daily training sessions for up to 50 high school age student athletes.</li>
+</ul>
+<h3 id="columbia-sportswear-company-august-2013-july-2014-">Columbia Sportswear Company <em>August 2013-July 2014</em></h3>
+<ul>
+<li>Worked as a Sales Associate</li>
+<li>Provided excellent customer service to all shoppers.</li>
+<li>Operated computer and cash register daily.</li>
+</ul>
+<h3 id="twilight-relays-may-2013-present-">Twilight Relays <em>May 2013-Present</em></h3>
+<ul>
+<li>Work as an Event Marketer/ Product Designer/ Product Merchandiser/ Event Planner.</li>
+<li>Annual Nike sponsored High School track meet at Jesuit High School.</li>
+</ul>
+<h3 id="darkside-track-club-august-2012-present-">Darkside Track Club <em>August 2012-Present</em></h3>
+<ul>
+<li>Co-Founder of Competitive Distance Running Club.</li>
+<li>Created and co-designed a freshman capsule worth of product; including singlets and sweatshirts.</li>
+</ul>
+<h2 id="education">Education</h2>
+<h3 id="gonzaga-university-january-2009-december-2012-">Gonzaga University <em>January 2009- December 2012</em></h3>
+<ul>
+<li>B.A. in History</li>
+<li>Minor in Religion</li>
+</ul>
+<h3 id="jesuit-high-school-portland-or-august-2004-may-2008-">Jesuit High School (Portland, OR) <em>August 2004- May 2008</em></h3>
+<h2 id="skills">Skills</h2>
+<ul>
+<li>Experienced leader</li>
+<li>Active listener</li>
+<li>Excellent communicator</li>
+<li>Great social media skills</li>
+<li>Good marketing sense</li>
+<li>Good aesthetic/visual skills</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li>Available upon request</li>
+</ul>
 
-		<!-- dots -->
-		<div class="dot-wrapper">
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-		</div>
-		
-		<h2>Experience</h2>
-		
-		<h3>Jesuit High School <em>January 2013-Present</em></h3>		
-		<ul>
-			<li>Work as an Assistant Track &amp; Cross Country Coach and Summer Camp Counselor.  </li>
-			<li>Led weekly classroom sessions on goal setting, race strategy and self-evaluation.  </li>
-			<li>Directed daily training sessions for up to 50 high school age student athletes.  </li>
-		</ul>
-
-		<h3>Columbia Sportswear Company <em>August 2013-July 2014</em></h3>
-		<ul>
-			<li>Worked as a Sales Associate</li>
-			<li>Provided excellent customer service to all shoppers.</li>
-			<li>Operated computer and cash register daily.</li>
-		</ul>
-
-		<h3>Twilight Relays <em>May 2013-Present</em></h3>
-		<ul>
-			<li>Work as an Event Marketer/ Product Designer/ Product Merchandiser/ Event Planner.</li>
-			<li>Annual Nike sponsored High School track meet at Jesuit High School.</li>
-		</ul>
-
-		<h3>Darkside Track Club <em>August 2012-Present</em></h3>
-		<ul>
-			<li>Co-Founder of Competitive Distance Running Club.</li>
-			<li>Created and co-designed a freshman capsule worth of product; including singlets and sweatshirts.</li>
-		</ul>
-
-		<h2>Education</h2>
-
-		<h3>Gonzaga University <em>January 2009- December 2012</em></h3>
-		<ul>
-			<li>B.A. in History</li>
-			<li>Minor in Religion</li>
-		</ul>
-
-		<h3>Jesuit High School (Portland, OR) <em>August 2004- May 2008</em></h3>
-
-		<h2>Skills</h2>
-
-		<ul>
-			<li>Experienced leader</li>
-			<li>Active listener</li>
-			<li>Excellent communicator</li>
-			<li>Great social media skills</li>
-			<li>Good marketing sense</li>
-			<li>Good aesthetic/visual skills</li>
-		</ul>
-
-		<h2>References</h2>
-		<ul>
-			<li>Available upon request</li>
-		</ul>
-	</body>
+    <script>
+      function insertDots() {
+      	
+      	var element = document.getElementsByTagName('h1');
+      	var position = 'afterend'; // 'beforebegin', 'afterbegin', 'beforeend'
+      	var wrapperMarkup = "<div class='dot-wrapper'></div>";
+      	
+      	// insert the wrapper
+      	element[0].insertAdjacentHTML(position, wrapperMarkup);
+      
+      	var numberOfDots = 5;
+      	var dotWrapper = document.getElementsByClassName('dot-wrapper')
+      	var dotMarkup = "<div class='dot'></div>";	
+      	
+      	// insert the dots
+      	for ( var i = 0; i < numberOfDots; i++) {
+      		dotWrapper[0].insertAdjacentHTML('afterbegin', dotMarkup);
+      	};
+      	
+      }
+      
+      // call the function
+      insertDots();
+    </script>
+  </body>
 </html>
