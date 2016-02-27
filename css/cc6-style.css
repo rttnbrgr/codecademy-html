@@ -552,7 +552,7 @@ ul:first-of-type li::before {
   .dot-wrapper {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 1.3em;
     padding-top: .3125em;
   }
 }
