@@ -24,17 +24,25 @@ h1 {
 h2 {
 	font-size: 1.125em; // 18px
 	margin-top: 1.5em;
+	margin-bottom: 0.6em;
+	margin-bottom: 0;
 }
 
 h3 {
 	
-	font-size: 1em;
+	// font-size: 1em;
+	font-size: 1.25em;	
 	color: $jhs-green;
-	margin: 1.2em 0 0.5em;
+	// margin: 1.2em 0 0.5em;
+	margin: 0.8em 0 .3em;	
 	font-weight: 300;
 	
 	em { 
 		// float: right; 
+		display: block;
+		// float: none;
+		line-height: 1.7;
+		font-size: 0.7em;
 		font-weight: 700;
 	}
 }
@@ -43,7 +51,10 @@ h3 {
 ul {
 	margin-left:0;
 	margin-top: 0;
-	
+	margin-bottom: 0.4em;
+	line-height: 1.4;
+
+
 	padding-left: 0;
 	list-style: none;
 
@@ -57,12 +68,15 @@ ul {
 
 	li {
 		line-height: 1.6;
+
 	}
 }
 
 // first list with contact info
 ul:first-of-type {
-	border: 1px solid pink;
+	// border: 1px solid pink;
+	margin-bottom: 0;
+	
 	li {
 		display: inline-block;
 		margin-right: 0.5em;
